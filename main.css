@@ -1,0 +1,473 @@
+body, 
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #424242;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0; 
+}
+
+header,
+nav, 
+footer, 
+section, 
+article, 
+div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*
+ *
+ * Common
+ * 
+ */
+
+.pics__more {
+  float: right;
+  font-size: .8em;
+  color: #333;
+  text-decoration: none;
+}
+
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 4em;
+  /*margin: 0.5em 0.25em;
+  display: inline-block;*/
+  color: #212121;
+  text-align: right;
+  
+    
+}
+.header__subtitle {
+  
+  text-align: right;
+  
+}
+.header__line {
+    border-bottom: 1px solid #7d97ad;
+    padding: 1em;
+    width: 100%;
+
+  }
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+
+/*
+ *
+ * Main
+ *
+ */
+
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+ *
+ * Content
+ *
+ */
+
+
+/*
+ *
+ * Hero
+ *
+ */
+
+.hero {
+  width: 100%;
+  position: relative;
+  background-image: url("./images/crab.jpg");
+  background-size: cover;
+  height: 500px;
+}
+
+.hero article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  height: 15%;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+}
+
+
+/*
+ *
+ * Top pics
+ *
+ */
+
+.top-pics {
+  
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em;
+}
+
+.pics__title {
+  font-weight: 300;
+  border-bottom: 1px solid #E0E0E0;
+  line-height: 50px;
+  font-size: 30px;
+  color: #7d97ad;
+}
+.pics__subtitle {
+  font-weight: 300;
+  line-height: 50px;
+  font-size: 18px;
+  color: #2d3c49;
+  text-align: center;
+}
+.pics__link {
+  font-weight: 300;
+  line-height: 10px;
+  font-size: 14px;
+  color: #2d3c49;
+  text-align: center;
+}
+
+.top-pics__item {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em 0;
+  line-height: 19.2px;
+}
+
+.top-pics__item:before {
+  content: "» ";
+}
+
+.top-pics__item:last-child {
+  border-bottom: none;
+}
+
+.top-pics__item a {
+  text-decoration: none;
+  color: #666;
+}
+
+.top-pics__item a:hover,
+.top-pics__item a:active {
+  text-decoration: underline;
+}
+
+
+/*
+ *
+ * Sport Scores
+ *
+ */
+
+.scores {
+  padding-top: 1em;
+}
+
+.scores__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scores__table th,
+.scores__table td {
+  padding: 1em; 
+}
+
+.scores__table th {
+  color: #fff;
+  font-weight: 300;
+  background-color: #78909C;
+}
+
+.scores__table tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+.scores__table tr:nth-child(even) td {
+  background-color: #eceff1;
+}
+
+.scores__table td.winner {
+  font-weight: bold;
+}
+
+.scores__table td:nth-child(3) {
+  text-align: right;
+}
+
+.scores__table td:nth-child(2),
+.scores__table td:nth-child(5) {
+  text-align: center;
+}
+
+/*
+ *
+ * Weather
+ *
+ */
+
+.weather {
+  padding: 1em;
+}
+
+.weather__location {
+  display: block;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.weather__desc {
+  display: block;
+  font-size: 1.2em;
+}
+
+.weather__today {
+  width: 60%;
+  vertical-align: middle;
+}
+
+.weather__today__image {
+  vertical-align: middle
+}
+
+.weather__today__temp {
+  font-size: 3em;
+}
+
+.weather__today__deg {
+  font-size: 2em;
+  display: inline;
+}
+
+.weather__next__item {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+.weather__next__item span {
+  display: block;
+}
+
+.weather__next__image {
+  width: 100%;
+}
+
+
+/*
+ *
+ * Recent pics
+ *
+ */
+
+.recent-pics {
+  clear: both;
+  padding: 1em;
+}
+
+.snippet {
+  clear: both;
+  margin: 24px 0;
+}
+
+.snippet__thumbnail {
+  width: 100px;
+  float: left;
+  margin-right: 1em;
+}
+
+.snippet__title {
+  font-weight: 500;
+}
+
+.snippet__title a {
+  text-decoration: none;
+  color: #666;
+}
+
+.snippet__title a:hover,
+.snippet__title a:active {
+  text-decoration: underline;
+}
+
+
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5em;
+}
+
+/*
+ *
+ * Featured work
+ *
+ */
+.container {
+        display: flex;
+        flex-wrap: wrap;
+  }
+  .box {
+        width: 100%;
+  }
+  @media screen and (min-width: 600px) {
+        .featured1, .featured2, .featured3 {
+          width: 33.33%;
+        }
+      }
+
+ 
+
+  @media screen and (min-width: 300px) {
+        .featured1, .featured2. .featured3 {
+          width: 100%;
+        }
+      }
+
+img.resize {
+  max-width:100%;
+  max-height:100%;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+hr {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 4px;
+  background-color:#7d97ad;
+  opcaity: 0.5;
+}
+
+.logo {
+      width: 200px;
+      display: inline-block;
+      margin: 10px 0px;
+  }
+
+   .flex-container {
+      display: flex;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+    .vertical-centerer {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .header-content {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
